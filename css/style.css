@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-boxs;
+}
+.sectionWithHeader{
+    background-image: url(../images/background_02.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+section header{
+    padding: 16px 48px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionWithHeader header div a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font: 16px 'Open Sans' sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.sectionWithHeader  h1{
+    font-size: 80px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 985px;
+    margin: auto;
+    margin-top: 250px;
+    color: #ffffff;
+    font-weight: 300;
+    font-stretch: extra-expanded;
+}
+.sectionWithHeader h1 span{
+    font-style: italic;
+}
+
