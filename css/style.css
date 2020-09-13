@@ -7,11 +7,14 @@
     background-image: url(../images/background_02.jpg);
     background-size: cover;
     height: 100vh;
+    margin-bottom: 81px;
 }
 section header{
     padding: 16px 48px;
 }
-
+.marg15px{
+    margin-top: 15px;
+}
 .container {
     display: flex;
     justify-content: space-between;
@@ -23,6 +26,7 @@ section header{
     font: 16px 'Open Sans' sans-serif;
     color: #ffffff;
     font-weight: 700;
+    
 }
 
 .sectionWithHeader  h1{
@@ -30,12 +34,117 @@ section header{
     font-family: 'Open Sans', sans-serif;
     max-width: 985px;
     margin: auto;
-    margin-top: 250px;
+    margin-top: 17%;
     color: #ffffff;
     font-weight: 300;
+    line-height: 80px;
     font-stretch: extra-expanded;
 }
 .sectionWithHeader h1 span{
     font-style: italic;
 }
+/* section Tell the world about yourself */
 
+.max_w760{
+    max-width: 760px;
+    margin: auto;
+}
+.textCenter{
+    text-align: center;
+}
+
+.goldLetters{
+    color: #d4af37;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    
+}
+h3{
+    text-transform: capitalize;
+    font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #747a7f;
+    margin-top: 24px;
+}
+
+.text{
+    color: #021725;
+    font: 18px/32px 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 55px;
+    margin-bottom: 50px;
+    
+
+}
+
+.btn{
+    text-transform: capitalize;
+    text-decoration: none;
+    border: 1px solid #000000;
+    color: #112532;
+    font-size: 14px;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 22px 50px 21px;
+    cursor: pointer;
+
+}
+.padding_bottom{
+    padding-bottom: 163px;
+}
+/* Show your amazing work */
+
+.containerPicture{
+    margin-top: 81px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.containerPicture div{
+    flex-basis: 25%;
+    
+}
+.picture{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: cover;
+}
+
+/* The amazing people behind this */
+
+.amazingPeople{
+    text-align: left;
+    
+}
+.amazingPeople div {
+    background-color: #f9f9f9;
+}
+.amazingPeople div div{
+    padding: 20px;
+}
+.amazingPeople div img{
+    width: 246px;
+    height: 192px;
+    object-fit: contain;
+}
+.amazingPeople div div p:first-child{
+    margin-bottom: 20px;
+}
+.amazingPeople div div p:nth-child(2){
+    text-transform: capitalize;
+    font-size: 21px;
+    font-family: 'Open Sans', sans-serif;
+    color: #747a7f;
+    margin-bottom: 35px;
+}
+.amazingPeople div div p:last-child{
+    color: #021725;
+    font: 13px/22px 'Open Sans', sans-serif;
+    font-weight: 300;
+}
