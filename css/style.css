@@ -218,6 +218,27 @@ h3{
     
     
 }
-.containerContactUs div p{
+.containerContactUs div p:first-child{
     text-align: center;
+    color: #505d68;
+    text-transform: uppercase;
+    font: 13px 'Open Sans', sans-serif;
+    font-weight: 600;
+    
 }
+.containerContactUs div p:last-child{
+    text-align: center;
+    color: #505d68;
+    font: 19px/34px 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 50px;
+    
+}
+.containerContactUs div:last-child p:last-child a{
+    text-decoration: none;
+    color: #505d68;
+    font: 19px/34px 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* footer */
