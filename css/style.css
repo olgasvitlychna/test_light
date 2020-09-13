@@ -242,3 +242,16 @@ h3{
 }
 
 /* footer */
+footer{
+    margin-top: 80px;
+    background-color: #eeeeee;
+}
+footer p{
+    color: #505d68;
+    font: 16px/90px 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+footer p a{
+    text-decoration: none;
+    color: #505d68;
+}
