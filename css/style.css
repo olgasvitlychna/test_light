@@ -90,7 +90,7 @@ h3{
     font-size: 14px;
     font-family:  'Open Sans', sans-serif;
     font-weight: 300;
-    padding: 22px 50px 21px;
+    padding: 20px 50px;
     cursor: pointer;
 
 }
@@ -123,12 +123,16 @@ h3{
 }
 .amazingPeople div {
     background-color: #f9f9f9;
+    
+}
+.m_b165{
+   margin-bottom: 165px;
 }
 .amazingPeople div div{
     padding: 20px;
 }
 .amazingPeople div img{
-    width: 246px;
+    width: 100%;
     height: 192px;
     object-fit: contain;
 }
@@ -149,3 +153,71 @@ h3{
 }
 
 /* We like to write */
+
+.lastPost{
+    background-color: #f9f9f9;
+    margin-top: 50px;
+    margin-bottom: 85px;
+}
+.lastPost div:last-child{
+    padding: 43px 20px 60px 40px;
+    
+}
+.lastPost div:last-child p:first-child{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color: #747a7f;
+    margin-bottom: 20px;
+}
+.lastPost div:last-child p:nth-child(2){
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #747a7f;
+    margin-bottom: 33px;
+}
+.lastPost div:last-child p:nth-child(3){
+    font-weight: 300;
+    font: 13px/22px 'Open Sans', sans-serif;
+    color: #747a7f;
+    margin-bottom: 83px;
+
+}
+.lastPost div:last-child a:last-child{
+    padding: 18px 48px 18px 46px !important;
+}
+
+/* section work with us */
+
+.contactUs{
+    margin-top: 160px;
+    
+}
+.bg-color{
+    background-color: #f9f9f9;
+    margin-top: 55px;
+}
+
+.contactUs div img{
+    height: 300px;
+    
+}
+.containerContactUs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    padding-bottom: 45px;
+    padding-left: 80px;
+    
+}
+.containerContactUs div{
+    flex-basis: 50%;
+    padding-top: 50px;
+    
+    
+}
+.containerContactUs div p{
+    text-align: center;
+}
