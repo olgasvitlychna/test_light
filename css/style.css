@@ -7,7 +7,7 @@
     background-image: url(../images/background_02.jpg);
     background-size: cover;
     height: 100vh;
-    background-position: center;
+    /* background-position: center; */
 }
 .mrgBt80{
     margin-bottom: 81px;
@@ -91,7 +91,7 @@ h3{
     font-size: 14px;
     font-family:  'Open Sans', sans-serif;
     font-weight: 300;
-    padding: 20px 50px;
+    padding: 15px 50px;
     cursor: pointer;
 
 }
@@ -208,6 +208,7 @@ iframe{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 .containerContactUs div:first-child{
     flex-basis: 100%;
@@ -332,3 +333,88 @@ footer p a{
     margin-bottom: 5px;
 }
 
+/* BLOG */
+
+.bgBlog{
+    background-image: url(../images/blogBackground_01.jpg);
+}
+.mainBlog{
+    margin: 80px 65px;
+    background-color: #f9f9f9;
+    padding: 65px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.blogPosts{
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+}
+.blogPosts div{
+    margin-bottom: 60px;
+    background-color: #ffffff;
+    padding: 35px;
+}
+.blogPosts div img{
+    width: 100%;
+    height: 400px;
+}
+.blogPosts div h3{
+    font-size: 30px;
+    font-weight: 300;
+    color: #000000;
+    margin-top: 35px;
+}
+.blogPosts div p:nth-child(3){
+    margin-top: 30px;
+    color: #d3b000;
+    font: 15px 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.blogPosts div p:nth-child(4){
+    margin-top: 40px;
+    margin-bottom: 70px;
+    color: #4d5c66;
+    font: 16px/25px 'Cardo', serif;
+}
+
+.blogAside{
+    flex-grow: 1;
+    margin-left: 55px;
+}
+.blogAside div{
+    margin-bottom: 60px;
+}
+.blogAside div h4{
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    color: #71777c;
+    font: 23px 'Open Sans', sans-serif;
+    font-weight: 300;
+    border-bottom: 3px solid #d3b000;
+    text-transform: capitalize;
+}
+.blogAside div a{
+    font: 16px/20px 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: none;
+    color: #021725;
+}
+.blogAside div a:after{
+    content: "";
+    display: block;
+    width: 0;
+    transition: 0.2s;
+    border-bottom: 2px solid #d3b000; 
+}
+.blogAside div a:hover::after {
+    width: 100%;
+}
+.blogAside div a img{
+    width: 300px;
+    height: 300px;
+}
+.mainBlog a{
+    margin: auto;
+}
