@@ -7,8 +7,10 @@
     background-image: url(../images/background_02.jpg);
     background-size: cover;
     height: 100vh;
-    margin-bottom: 81px;
     background-position: center;
+}
+.mrgBt80{
+    margin-bottom: 81px;
 }
 section header{
     padding: 16px 48px;
@@ -24,7 +26,7 @@ section header{
 .sectionWithHeader header div a{
     text-transform: uppercase;
     text-decoration: none;
-    font: 16px 'Open Sans' sans-serif;
+    font: 16px 'Open Sans', sans-serif;
     color: #ffffff;
     font-weight: 700;
     
@@ -53,7 +55,6 @@ section header{
 .textCenter{
     text-align: center;
 }
-
 .goldLetters{
     color: #d4af37;
     font-size: 13px;
@@ -100,15 +101,13 @@ h3{
 /* Show your amazing work */
 
 .containerPicture{
-    margin-top: 81px;
+    margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
-
 }
 .containerPicture div{
     flex-basis: 25%;
     padding: 0 1px;
-    
 }
 .picture{
     width: 100%;
@@ -118,11 +117,12 @@ h3{
 /* The amazing people behind this */
 
 .amazingPeople{
-    text-align: left;
+    display: flex;
     
 }
 .amazingPeople div {
     background-color: #f9f9f9;
+    margin: 0 1px;
     
 }
 .m_b165{
@@ -159,64 +159,70 @@ h3{
     margin-top: 50px;
     margin-bottom: 85px;
 }
-.lastPost div:last-child{
-    padding: 43px 20px 60px 40px;
-    
-}
-.lastPost div:last-child p:first-child{
+.lastPostText{
+    padding: 43px 20px 60px 40px; 
+} 
+.lastPostText p:first-child{
     text-transform: uppercase;
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
     color: #747a7f;
     margin-bottom: 20px;
 }
-.lastPost div:last-child p:nth-child(2){
+.lastPostText p:nth-child(2){
     text-transform: capitalize;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     color: #747a7f;
     margin-bottom: 33px;
 }
-.lastPost div:last-child p:nth-child(3){
+.lastPostText p:nth-child(3){
     font-weight: 300;
     font: 13px/22px 'Open Sans', sans-serif;
     color: #747a7f;
     margin-bottom: 83px;
 
 }
-.lastPost div:last-child a:last-child{
-    padding: 18px 48px 18px 46px !important;
-}
+
 
 /* section work with us */
 
 .contactUs{
     margin-top: 160px;
-    
+    margin-bottom: 80px;
+    padding-bottom: 50px;
 }
 .bg-color{
     background-color: #f9f9f9;
     margin-top: 55px;
 }
 
-.contactUs div img{
+iframe{
+    overflow:hidden;
+    width: 100%;
     height: 300px;
+    position: relative;
     
 }
 .containerContactUs{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    padding-bottom: 45px;
-    padding-left: 80px;
-    
 }
-.containerContactUs div{
+.containerContactUs div:first-child{
+    flex-basis: 100%;
+}
+.containerContactUs div:nth-child(2){
     flex-basis: 50%;
-    padding-top: 50px;
-    
-    
+}
+.containerContactUs div:nth-child(3){
+    flex-basis: 50%;
+}
+.containerContactUs div:nth-child(4){
+    flex-basis: 50%;
+}
+.containerContactUs div:last-child{
+    flex-basis: 50%;
 }
 .containerContactUs div p:first-child{
     text-align: center;
@@ -224,6 +230,8 @@ h3{
     text-transform: uppercase;
     font: 13px 'Open Sans', sans-serif;
     font-weight: 600;
+    margin-top: 90px;
+    
     
 }
 .containerContactUs div p:last-child{
@@ -231,19 +239,22 @@ h3{
     color: #505d68;
     font: 19px/34px 'Open Sans', sans-serif;
     font-weight: 300;
-    margin-top: 50px;
+    
     
 }
-.containerContactUs div:last-child p:last-child a{
+.containerContactUs div p:last-child a{
     text-decoration: none;
     color: #505d68;
     font: 19px/34px 'Open Sans', sans-serif;
     font-weight: 300;
+    text-align: center;
+
+    
 }
 
 /* footer */
 footer{
-    margin-top: 80px;
+  
     background-color: #eeeeee;
 }
 footer p{
@@ -255,3 +266,69 @@ footer p a{
     text-decoration: none;
     color: #505d68;
 }
+
+
+/* STYLE FOR ABOUT.HTML */
+.bgAbout{
+    background-image: url(../images/backgroundAbout_01.jpg);
+}
+.textAbout{
+    font: 18px/30px 'Open Sans', sans-serif;
+    color: #4d5c66;
+    font-weight: 300;
+    padding-top: 165px;
+    padding-bottom: 155px;
+}
+.servicesAbout{
+    background-color: #f9f9f9;
+    display: flex;
+    
+}
+.servicesAbout  div {
+    flex-basis: 50%;
+    margin-right: 40px;
+}
+.servicesAbout div img{
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+}
+.servicesAboutText{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.servicesAboutText h3{
+    flex-basis: 100%;
+    margin: 0;
+    margin-bottom: 60px;
+}
+.servicesAboutText p{
+    flex-basis: 50%;
+    font: 18px/30px 'Open Sans', sans-serif;
+    color: #4d5c66;
+    overflow: scroll;
+    height: 250px;
+}
+.servicesAboutText ul{
+    flex-basis: 50%;
+    overflow: scroll;
+    height: 250px;
+}
+.servicesAboutText ul li{
+    list-style: none;
+    font: 18px/30px 'Open Sans', sans-serif;
+    color: #4d5c66;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.servicesAbout ul li::before{
+    content: " ";
+    display: inline-block;
+    background-color: #4d5c66;
+    width: 6px;
+    height: 1px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
