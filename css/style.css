@@ -537,3 +537,81 @@ footer p a{
     position: relative;
     top: 80px;
 }
+
+/* PROJECT!!!!!!!!!!!!!!!!!!!!! */
+
+.bgProject{
+    background-image: url(../images/projectBG_01.jpg);
+    height: 100vh;
+    margin-bottom: 84px;
+}
+.mainProject{
+    background-color: #ffffff;
+    max-width: 1167px;
+    margin: auto;
+}
+.mainProjectContainer{
+    padding: 65px;
+    display: flex;
+    background-color: #f9f9f9;
+}
+.projectPicture{
+    flex-basis: 80%;
+}
+.projectPicture div{
+    max-width: 666px;
+    height: 416px;
+    margin-bottom: 19px;
+}
+.projectPicture div:first-child h4{
+    font: 45px/80px 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+.projectPicture div:first-child p{
+    font: 20px/32px 'Cardo', sans-serif;
+    overflow: scroll;
+    height: 200px;
+}
+.projectPicture div:first-child p span{
+    font-weight: 700;
+}
+.projectPicture div:nth-child(4){
+    height: 832px;
+}
+.projectAside{
+    flex-basis: 20%;
+}
+.projectAside div ul li{
+    list-style: none;
+}
+.containerWithBTN{
+    padding-top: 104px;
+    padding-bottom: 73px;
+    display: flex;
+    justify-content: space-around;
+}
+.btnProject{
+    border: 1px solid #a1a1a1;
+    width: 249px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font: 15px/58px 'Open Sans', sans-serif;
+    color: #a1a1a1;
+    cursor: pointer;
+
+}
+.btnProject:hover{
+    color: black;
+    border-color: black;
+}
+
+.workBG{
+    background-image: url(../images/workBG_02.jpg);
+    height: 400px;
+}
+.workText{
+    padding-bottom: 80px;
+}

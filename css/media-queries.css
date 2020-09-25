@@ -194,6 +194,59 @@
     .firstContainer div:last-child{
         flex-basis: 100%;
     }
+
+    /* PROJECT!!!!!!!!!!!!!!!!!!!!! */
+    .mainProjectContainer{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+    }
+    .bgProject{
+        background-image: url(../images/projectBG_01.jpg);
+    }
+    .mainProjectContainer{
+        padding: 0 15px;
+    }
+    .projectPicture{
+        flex-basis: 100%;
+        
+    }
+    .projectAside{
+        flex-basis: 100%;
+    }
+    .projectPicture div{
+        height: 300px;
+    }
+    .projectPicture div:first-child h4{
+        margin-bottom: 60px;
+    }
+    .projectPicture div:first-child p{
+        height: 150px;
+    }
+    .projectPicture div img{
+        width: 100%;
+        height: 100%;
+    }
+    .projectAside div ul li{
+        margin-left: -40px;
+    }
+    .projectAside div ul li img{
+        width: 100%;
+        
+    }
+    .containerWithBTN{
+        display: none;
+        
+    }
+    footer{
+        margin-top: 50px;
+        
+    }
+    .workBG{
+        background-image: url(../images/workBG_02.jpg);
+        height: 400px;
+    }
 }
 
 
