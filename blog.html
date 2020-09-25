@@ -6,28 +6,24 @@
     <title>Test Light</title>
     <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+
 </head>
 <body>
-
-    <section class="sectionWithHeader bgBlog mrgBt80">
+    <section class="sectionWithHeader bgBlog textCenter">
         <header>
             <div class="container">
                 <a href="#"><img src="images/logo_ELEGANT_03.png" alt="ELEGANT"></a>
-                <div class="menu_bar">
+                <nav class="menu_bar">
                     <ul>
-                        <li><a href="#" class="marg15px">menu <i class="far fa-bars"></i></a>
-                            <ul>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                            </ul>
+                        <li><a href="#" class="marg15px"><span>menu</span>  <i class="far fa-bars"></i></a>
                         </li>
                     </ul>
-                </div>
-                
+                </nav>  
             </div>
         </header>
-    </section class>
+    </section>
+          
 
     <section class="mainBlog">
         <div class="blogPosts">
@@ -49,27 +45,35 @@
         <div class="blogAside">
             <div>
                 <h4>Recent Posts</h4>
-                <a href="#">This is the Title of Your Post</a> <br>
-                <a href="#">This is the Title of Your Post</a> <br>
-                <a href="#">This is the Title of Your Post</a> <br>
-                <a href="#">This is the Title of Your Post</a> <br>
+                <ul>
+                    <li><a href="#">This is the Title of Your Post</a></li>
+                    <li><a href="#">This is the Title of Your Post</a></li>
+                    <li><a href="#">This is the Title of Your Post</a></li>
+                    <li><a href="#">This is the Title of Your Post</a></li>
+                </ul>   
             </div>
             <div>
                 <h4>Categories</h4>
-                <a href="#">Art</a> <br>
-                <a href="#">Business</a> <br>
-                <a href="#">Design</a> <br>
-                <a href="#">Code</a> <br>
+                <ul>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li> <a href="#">Design</a></li>
+                    <li><a href="#">Code</a></li>
+                </ul>
             </div>
             <div>
                 <h4>Projects</h4>
-                <a href="#"><img src="images/picture_2.jpg" alt=""></a> <br>
-                <a href="#"><img src="images/picture_3.jpg" alt=""></a> <br>
-                <a href="#"><img src="images/picture_4.jpg" alt=""></a> <br>
-                <a href="#"><img src="images/picture_5.jpg" alt=""></a> <br>
+                <ul>
+                    <li><a href="#"><img src="images/picture_2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/picture_3.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/picture_4.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="images/picture_5.jpg" alt=""></a></li>
+                </ul>
             </div>
         </div>
+        <div class="btnBlog">
         <a href="#" class="btn">load more posts</a>
+        </div>
     </section>
    
     <footer>

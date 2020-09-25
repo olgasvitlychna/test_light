@@ -93,6 +93,13 @@
         flex-basis: 100%;
     }
 
+    footer{
+        flex-wrap: wrap;
+    }
+    footer p{
+        line-height: 15px;
+    }
+
     /* SECTION ABOUT!!!!!!!!!!!!!! */
     .bgAbout{
         background-image: url(../images/backgroundAbout_01.jpg);
@@ -104,7 +111,7 @@
         flex-wrap: wrap;
     }
     .servicesAboutText{
-        padding: ;
+        padding: 50px 15px 0;
     }
     .servicesAbout div{
         flex-basis: 100%;
@@ -123,6 +130,69 @@
     .servicesAboutText ul{
         height: 150px;
         margin-bottom: 50px;
+    }
+
+    /* BLOG */
+    .bgBlog{
+        background-image: none;
+        height: 80px;
+        margin: 0;
+        
+    }
+    .mainBlog{
+        background-color: #ffffff;
+        margin: 0;
+        padding: 60px 15px 100px;
+        flex-direction: column;
+    }
+    
+    .blogPosts{
+        /* flex-basis: 100%; */
+        background-color: #fcfcfc;
+        margin: 0;
+        
+    }
+    .blogPosts div{
+        
+        background-color: #ffffff
+    }
+    .blogPosts div img{
+        height: 300px
+    }
+    .blogAside{
+        /* flex-basis: 100%; */
+        background-color: #f9f9f9;
+        padding: 50px;
+    }
+    .btnBlog{
+        /* flex-basis: 100%; */
+        margin-top: -60px;
+    }
+    /* CONTACT!!!!!! */
+    .bgContact{
+        background-image: none;
+        height: 80px;
+        margin: 0;
+    }
+    .mainContact{
+        margin: 0 15px;
+    }
+    .mainContact div{
+        height: 300px;
+    }
+    .firstContainer{
+       flex-direction: column;
+       text-align: start;
+    }
+    .secondContainer{
+        flex-direction: column;
+        text-align: start;
+    }
+    .firstContainer div:first-child{
+        flex-basis: 100%;
+    }
+    .firstContainer div:last-child{
+        flex-basis: 100%;
     }
 }
 
