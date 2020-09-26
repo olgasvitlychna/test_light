@@ -33,6 +33,12 @@
 
 .menu_bar ul{
    list-style-type: none; 
+   margin: 0;
+   padding: 0;
+}
+.menu_bar ul li a i{
+    position: relative;
+    left: 25px;
 }
 
 .menu_bar ul li a{
