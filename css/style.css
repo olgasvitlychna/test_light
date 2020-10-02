@@ -582,9 +582,7 @@ footer p a{
 .projectPicture div:first-child p span{
     font-weight: 700;
 }
-.projectPicture div:nth-child(4){
-    height: 832px;
-}
+
 .projectAside{
     flex-basis: 20%;
 }
@@ -621,3 +619,5 @@ footer p a{
 .workText{
     padding-bottom: 80px;
 }
+
+/* Project.js */
