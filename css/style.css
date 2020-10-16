@@ -1,13 +1,13 @@
 *{
     margin: 0;
-    padding: o;
+    padding: 0;
     box-sizing: border-box;
 }
 .sectionWithHeader{
     background-image: url(../images/background_02.jpg);
     background-size: cover;
     height: 100vh;
-    background-position: center; 
+    background-position: center;
 }
 .mrgBt80{
     margin-bottom: 81px;
@@ -25,14 +25,14 @@
     justify-content: space-between;
 }
 .sectionWithHeader header div a{
-    line-height: 100px;
+
     margin-left: 48px;
-    
+
 }
 
 
 .menu_bar ul{
-   list-style-type: none; 
+   list-style-type: none;
    margin: 0;
    padding: 0;
 }
@@ -79,8 +79,8 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    
-    
+
+
 }
 h3{
     text-transform: capitalize;
@@ -97,7 +97,7 @@ h3{
     font-weight: 300;
     margin-top: 55px;
     margin-bottom: 50px;
-    
+
 
 }
 
@@ -136,11 +136,11 @@ h3{
 
 .amazingPeople{
     display: flex;
-    
+
 }
 .amazingPeople div {
     background-color: #f9f9f9;
-    margin: 0 1px;  
+    margin: 0 1px;
 }
 
 .m_b165{
@@ -180,7 +180,7 @@ h3{
 .lastPostText{
     max-width: 310px;
     margin: auto;
-} 
+}
 .lastPostText p:first-child{
     text-transform: uppercase;
     font-size: 13px;
@@ -252,16 +252,16 @@ iframe{
     font: 13px 'Open Sans', sans-serif;
     font-weight: 600;
     margin-top: 90px;
-    
-    
+
+
 }
 .containerContactUs div p:last-child{
     text-align: center;
     color: #505d68;
     font: 19px/34px 'Open Sans', sans-serif;
     font-weight: 300;
-    
-    
+
+
 }
 .containerContactUs div p:last-child a{
     text-decoration: none;
@@ -270,7 +270,7 @@ iframe{
     font-weight: 300;
     text-align: center;
 
-    
+
 }
 
 /* footer */
@@ -621,3 +621,149 @@ footer p a{
 }
 
 /* Project.js */
+.owl-carousel div img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* menu bar */
+
+
+nav {
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    transform: translateX(0px);
+    right: 0;
+    height: 100vh;
+    width: 400px;
+    transition: all 800ms cubic-bezier(.8, 0, .33, 1);
+    border-radius: 0% 0% 0% 50%;
+}
+
+nav.nav-open {
+    transform: translateX(0px);
+    border-radius: 0% 0% 0% 0%;
+	 background: rgba(255, 255, 255, 0.9);
+}
+
+nav .menu-btn {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    padding: 0;
+    width: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+nav .menu-btn .line {
+    padding: 0;
+    width: 30px;
+    background: #000;
+    height: 2px;
+    margin: 5px 0;
+    transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .menu-btn .line.line--1 {
+    width: 30px;
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--1.line-cross {
+    width: 30px;
+    transform: rotate(45deg) translateY(10px);
+	 background: rgba(0,0,0,0.6);
+}
+
+nav .menu-btn .line.line--2 {
+    width: 28px;
+    transform: translateX(0);
+}
+
+nav .menu-btn .line.line--2.line-fade-out {
+    width: 28px;
+    transform: translate(30px);
+    opacity: 0;
+}
+
+nav .menu-btn .line.line--3 {
+    width: 20px;
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--3.line-cross {
+    width: 30px;
+    transform: rotate(-45deg) translateY(-10px);
+	 background: rgba(0,0,0,0.6);
+}
+
+nav .nav-links {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 900ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .nav-links.fade-in {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+nav .nav-links .link {
+    margin: 20px 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgba(0,0,0,0.9);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .nav-links .link:hover {
+    color: rgba(0, 0, 0, .5);
+}
+
+
+.inform{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 2rem;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.support{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	padding: 10px;
+	display: flex;
+}
+a{
+	margin: 0 20px;
+	color: #fff;
+	font-size: 2rem;
+	transition: all 400ms ease;
+}
+
+a:hover{
+	color: #222;
+}

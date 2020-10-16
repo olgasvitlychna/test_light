@@ -1,0 +1,406 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+.goldLetters {
+  color: #d4af37;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 44px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #747a7f;
+  margin-top: 24px;
+}
+
+.text {
+  color: #021725;
+  font: 18px/32px 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+.btn{
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 1px solid #000000;
+  color: #112532;
+  font-size: 14px;
+  font-family:  'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 15px 50px;
+  cursor: pointer;
+
+
+}
+.sectionWithHeaderIndex {
+  background-image: url(../images/background_02.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+
+  header {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 47px;
+    @include max-screen(767px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .logo {
+      padding-top: 9px;
+    }
+
+    .nav_bar {
+      nav {
+        .menu {
+          text-transform: uppercase;
+          font: 16px/50px 'Open Sans', sans-serif;
+          font-weight: 600;
+          color: white;
+          text-decoration: none;
+          position: relative;
+          left: 290px;
+          top: 8px;
+        }
+      }
+    }
+  }
+
+  .slogan {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      font: 80px/80px 'Open Sans', sans-serif;
+      color: #ffffff;
+      font-weight: 300;
+      @include max-screen(767px) {
+        font: 40px/40px;
+      }
+      @include max-screen(360px) {
+        font: 20px/20px;
+      }
+
+      span {
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.whoWeAre {
+  .textWhoWeAre {
+    max-width: 760px;
+    margin: auto;
+    padding-top: 82px;
+    padding-bottom: 160px;
+    text-align: center;
+
+    .goldLetters {
+      @extend .goldLetters;
+    }
+
+    h3 {
+      @extend h3;
+    }
+
+    .text {
+      @extend .text;
+    }
+
+  }
+}
+
+.amazingWork {
+  .amazingWorkText {
+    max-width: 760px;
+    margin: auto;
+    text-align: center;
+
+    .goldLetters {
+      @extend .goldLetters;
+    }
+
+    h3 {
+      @extend h3;
+      margin-bottom: 90px;
+    }
+  }
+
+  .containerPicture {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 160px;
+
+    div {
+      flex-basis: 25%;
+      padding: 0 1px;
+
+      .picture {
+        width: 100%;
+        height: 300px;
+      }
+    }
+  }
+}
+
+.amazingPeople {
+  text-align: center;
+  max-width: 760px;
+  margin: auto;
+  padding-bottom: 160px;
+  .amazingPeopleContainer {
+    display: flex;
+
+    div {
+      background-color: #f9f9f9;
+      margin: 0 2px;
+
+      img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+      }
+
+      div {
+        padding: 20px;
+        text-align: left;
+
+        p:first-child {
+          margin-bottom: 20px;
+        }
+
+        p:nth-child(2) {
+          text-transform: capitalize;
+          font-size: 21px;
+          font-family: 'Open Sans', sans-serif;
+          color: #747a7f;
+          margin-bottom: 35px;
+        }
+
+        p:last-child {
+          color: #021725;
+          font: 13px/22px 'Open Sans', sans-serif;
+          font-weight: 300;
+        }
+
+      }
+    }
+  }
+}
+.likeToWrite{
+  max-width: 760px;
+  margin: auto;
+  padding-bottom: 170px;
+  .likeToWriteText{
+    text-align: center;
+    padding-bottom: 48px;
+  }
+  .lastPost{
+    background-color: #f9f9f9;
+    margin-top: 50px;
+    margin-bottom: 85px;
+    display: flex;
+    .lastPostText{
+      max-width: 310px;
+      margin: auto;
+      p:first-child{
+        text-transform: uppercase;
+        font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
+        color: #747a7f;
+        margin-bottom: 20px;
+      }
+      p:nth-child(2){
+        text-transform: capitalize;
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        color: #747a7f;
+        margin-bottom: 33px;
+      }
+      p:nth-child(3){
+        font-weight: 300;
+        font: 13px/22px 'Open Sans', sans-serif;
+        color: #747a7f;
+        margin-bottom: 80px;
+        overflow: scroll;
+        height: 100px;
+      }
+    }
+
+
+  }
+  .btnMoreFromOurBlog{
+     text-align: center;
+
+   }
+}
+
+.contactUs{
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+  .containerContactUs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+    margin-top: 55px;
+    .map {
+      flex-basis: 100%;
+      max-width: 760px;
+      height: 295px;
+      iframe{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div{
+      p:first-child {
+        text-align: center;
+        color: #505d68;
+        text-transform: uppercase;
+        font: 13px 'Open Sans', sans-serif;
+        font-weight: 600;
+        margin-top: 90px;
+        margin-bottom: 50px;
+      }
+      p:last-child{
+        text-align: center;
+        color: #505d68;
+        font: 19px/34px 'Open Sans', sans-serif;
+        font-weight: 300;
+      }
+    }
+    div:nth-child(2){
+      flex-basis: 50%;
+    }
+    div:nth-child(3){
+      flex-basis: 50%;
+    }
+    div:nth-child(4){
+      flex-basis: 50%;
+    }
+    div:last-child{
+      flex-basis: 50%;
+       a{
+        text-decoration: none;
+        color: #505d68;
+        font: 19px/34px 'Open Sans', sans-serif;
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+#myModal {
+  max-width: 750px;
+  margin: auto;
+  height: 602px;
+  background: #FFFFFF;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  display: none;
+  opacity: 0;
+  z-index: 38;
+  text-align: center;
+  .windowHeader{
+    background-color: black;
+    height: 100px;
+    color: #FFFFFF;
+    p{
+      text-transform: uppercase;
+      font: 24px/100px 'Open Sans', sans-serif;
+    }
+  }
+  form{
+    padding: 40px 90px 166px;
+    .dialogEmailForm{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      label{
+        font: 22px 'Open Sans', sans-serif;
+        color: #363636;
+        text-transform: uppercase;
+      }
+      input{
+        height: 60px;
+        width: 300px;
+        border-radius: 2px;
+        line-height: 60px;
+        font-size: 22px;
+      }
+    }
+    .buttonForm{
+      max-width: 528px;
+      margin: auto;
+      margin-top: 40px;
+      .buttonSubmit{
+        background-color: #b8b8b8;
+        height: 60px;
+        width: 100%;
+        text-transform: uppercase;
+        font: 24px/60px 'Open Sans', sans-serif;
+      }
+      p{
+        font: 24px/60px 'Open Sans', sans-serif;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+      }
+      .buttonFacebook{
+        display: block;
+        background-color: #4966a5;
+        height: 60px;
+        width: 100%;
+        text-transform: uppercase;
+        font: 24px/60px 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+    }
+  }
+}
+#myModal #myModal__close {
+  width: 21px; height: 21px;
+  position: absolute;
+  font-size: 50px;
+  top: -30px; right: 11px;
+  cursor: pointer;
+  display: block;
+}
+#myOverlay {
+  z-index: 37;
+  position: fixed;
+  background: rgba(0,0,0,.7);
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+

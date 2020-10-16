@@ -1,0 +1,136 @@
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+.goldLetters {
+  color: #d4af37;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-size: 44px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #747a7f;
+  margin-top: 24px;
+}
+
+.text {
+  color: #021725;
+  font: 18px/32px 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-top: 55px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 1px solid #000000;
+  color: #112532;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 15px 50px;
+  cursor: pointer;
+
+
+}
+
+.sectionWithHeaderProject {
+  background-image: url(../images/projectBG_01.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 84px;
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 47px;
+    @include max-screen(767px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .logo {
+      padding-top: 9px;
+    }
+
+    .nav_bar {
+      nav {
+        .menu {
+          text-transform: uppercase;
+          font: 16px/50px 'Open Sans', sans-serif;
+          font-weight: 600;
+          color: white;
+          text-decoration: none;
+          position: relative;
+          left: 290px;
+          top: 8px;
+        }
+      }
+    }
+  }
+}
+
+.mainProject {
+  background-color: #ffffff;
+  max-width: 1167px;
+  margin: auto;
+
+  .mainProjectContainer {
+    padding: 65px;
+    //display: flex;
+    background-color: #f9f9f9;
+
+    .projectPicture {
+      flex-basis: 80%;
+
+      .projectPictureText {
+        max-width: 666px;
+        height: 416px;
+        margin-bottom: 19px;
+
+        h4 {
+          font: 45px/80px 'Open Sans', sans-serif;
+          font-weight: 700;
+          margin-bottom: 100px;
+        }
+
+        p {
+          font: 20px/32px 'Cardo', sans-serif;
+          overflow: scroll;
+          height: 200px;
+
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+      .carouselContainer{
+        div{
+          height: 417px;
+        }
+      }
+    }
+    .projectAside {
+      flex-basis: 20%;
+
+      .projectAsideContainer {
+        ul {
+          li {
+            list-style: none;
+          }
+        }
+      }
+    }
+  }
+}
+

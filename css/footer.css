@@ -1,0 +1,23 @@
+footer {
+  background-color: #eeeeee;
+}
+footer .containerFooter {
+  max-width: 770px;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+footer .containerFooter p {
+  color: #505d68;
+  font: 16px/20px "Open Sans", sans-serif;
+  font-weight: 300;
+}
+footer .containerFooter p a {
+  text-decoration: none;
+  color: #505d68;
+}
+
+/*# sourceMappingURL=footer.css.map */
